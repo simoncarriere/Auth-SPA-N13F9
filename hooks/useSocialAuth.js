@@ -39,7 +39,7 @@ export const useSocialAuth = () => {
             email: res.user.email,
             displayName: res.user.displayName,
             photoURL: res.user.photoURL,
-          });
+          },{ merge: true });
         } catch (err) {
           console.error(err.message);
         }
