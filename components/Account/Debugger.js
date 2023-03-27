@@ -24,7 +24,7 @@ const Debugger = ({ user }) => {
           <p>Email: {currentUser.email}</p>
           <p>displayName: {currentUser.displayName}</p>
           <p>
-            photoURL: {currentUser.photoURL ? currentUser.photoURL : "null"}
+            photoURL: {currentUser.photoURL ? currentUser.photoURL.slice(0, 100) + "..." : "null"}
           </p>
         </>
       )}
